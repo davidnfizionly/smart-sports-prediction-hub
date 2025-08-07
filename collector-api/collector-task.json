@@ -1,0 +1,45 @@
+{
+  "family": "collector-api-task",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::481665100297:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "name": "collector-api",
+      "image": "481665100297.dkr.ecr.us-east-1.amazonaws.com/collector-api:v3",
+      "essential": true,
+      "environment": [
+        {
+          "name": "FOOTBALL_API_KEY",
+          "value": "eb0ec1b5f0msh2f257f077ad5453p1f1daejsn6cfb79ee53d9"
+        },
+        {
+          "name": "FOOTBALL_API_HOST",
+          "value": "api-football-v1.p.rapidapi.com"
+        },
+        {
+          "name": "NBA_API_KEY",
+          "value": "eb0ec1b5f0msh2f257f077ad5453p1f1daejsn6cfb79ee53d9"
+        },
+        {
+          "name": "NBA_API_HOST",
+          "value": "api-nba-v1.p.rapidapi.com"
+        },
+        {
+          "name": "KINESIS_STREAM",
+          "value": "sportsstatsstream"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/collector-api",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ]
+}

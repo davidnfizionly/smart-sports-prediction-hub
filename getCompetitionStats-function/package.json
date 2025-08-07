@@ -1,0 +1,15 @@
+{
+  "name": "get-competition-stats",
+  "version": "1.0.0",
+  "description": "AWS Lambda to fetch sports competition stats from DynamoDB",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.569.0",
+    "@aws-sdk/lib-dynamodb": "^3.569.0"
+  }
+}

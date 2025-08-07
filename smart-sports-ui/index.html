@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Sports Prediction Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    🏆 Smart Sports Prediction Hub
+  </header>
+
+  <div class="controls">
+    <label for="competition">Competition:</label>
+    <select id="competition">
+      <option>UEFA Champions League</option>
+      <option>La Liga</option>
+      <option>Premier League</option>
+      <option>Ligue 1</option>
+      <option>NBA</option>
+    </select>
+
+    <label for="season">Season:</label>
+    <select id="season">
+      <option>2024-2025</option>
+      <option>2025-2026</option>
+    </select>
+
+    <label for="award">Individual Award:</label>
+    <select id="award">
+      <option>Top Scorer (Golden Boot / Pichichi)</option>
+      <option>Best Goalkeeper</option>
+      <option>Most Valuable Player (MVP)</option>
+    </select>
+
+    <button id="loadButton">Load Data</button>
+  </div>
+
+  <div class="predictions">
+    <pre id="results">Waiting for input...</pre>
+  </div>
+
+  <footer>
+    Powered by AWS + OpenAI GPT-4
+  </footer>
+
+  <script src="App.js"></script>
+</body>
+</html>

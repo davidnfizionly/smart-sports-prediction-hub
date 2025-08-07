@@ -1,0 +1,10 @@
+{
+  "name": "collector-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "aws-sdk": "^2.1484.0"
+  }
+}

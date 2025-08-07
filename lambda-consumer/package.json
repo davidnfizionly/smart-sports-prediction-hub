@@ -1,0 +1,17 @@
+{
+  "name": "lambda-consumer",
+  "version": "1.0.0",
+  "description": "Lambda function to consume Kinesis events and store them in DynamoDB & S3",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "zip -r lambda-consumer.zip ."
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.859.0",
+    "@aws-sdk/client-s3": "^3.859.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
