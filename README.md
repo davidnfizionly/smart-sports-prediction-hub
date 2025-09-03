@@ -89,19 +89,19 @@ Sports fans, analysts, and betting platforms often lack **real-time explainable 
 ## 🖼️ Production Evidence
 
 ### ECS Cluster – Smart Sports Tasks
-![ECS Cluster](images/1.png)  
+![ECS Cluster](images/ecs-cluster.png)  
 *Amazon ECS cluster (smart-sports-cluster) running Collector API + UI tasks on Fargate.*
 
 ### S3 Data Lake – Archived Predictions
-![S3 Predictions](images/2.png)  
+![S3 Predictions](images/s3-predictions.png)  
 *Amazon S3 bucket storing archived predictions JSON files for historical analysis.*
 
 ### CloudWatch Logs – Real-Time Streaming
-![CloudWatch Logs](images/3.png)  
+![CloudWatch Logs](images/cloudwatch-logs.png)  
 *CloudWatch log events showing live match data being streamed and consumed by Lambda.*
 
 ### DynamoDB – Live Sports Stats
-![DynamoDB Table](images/4.png)  
+![DynamoDB Table](images/dynamodb-table.png)  
 *DynamoDB table (SportsStats) storing live competition stats with efficient queries.*
 
 ### GitHub Actions – CI/CD Pipeline
